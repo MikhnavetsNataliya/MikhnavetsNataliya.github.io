@@ -1,2 +1,2 @@
 # MikhnavetsNataliya.github.io
-Adnjcthdbc и шиномонтаж AutoPoint
+Автосервис и шиномонтаж AutoPoint
