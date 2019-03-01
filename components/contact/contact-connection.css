@@ -1,0 +1,50 @@
+@import "../../style.css";
+
+:root {
+    --contact-connection-title-color: var(--baltic-sea);
+    --contact-connection-text-color: var(--medium-gray-red);
+    --contact-item-link-text-color:var(--medium-gray-red);
+    --contact-item-link-hover-color:var(--royal-blue);
+    --contact-item-link-focus-color:var(--cornflower-blue);
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 1170px;
+}
+
+.contact-item__title {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: var(--contact-connection-title-color);
+}
+
+.contact-item__content {
+    color: var(--contact-connection-text-color);
+    font-weight: 400;
+}
+
+.contact-item__link {
+    text-decoration: none;
+    color: var(--contact-item-link-text-color);
+}
+
+.contact-item__link:hover,
+.contact-item__link:active,
+.contact-item__link:focus {
+    color: var(--contact-item-link-hover-color);
+}
+
+.contact-item__link:focus {
+    outline: none;
+    color: var(--contact-item-link-focus-color);
+}

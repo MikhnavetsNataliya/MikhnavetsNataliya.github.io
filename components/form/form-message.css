@@ -1,0 +1,46 @@
+@import "../../style.css";
+
+:root {
+    --form-message-input-bg-color:var(--honeydew);
+    --form-message-border-input-color: var(--royal-blue);
+    --form-message-input-text-color: var(--royal-blue);
+    --form-message-input-bg-focus-color:var(--gainsboro);
+}
+
+.form-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 1170px;
+    font-size: 1rem;
+}
+
+.form-message__personal-info {
+    display: block;
+}
+
+.form-message__item {
+    margin: 1.3em 0;
+}
+
+.form-message__input{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0.95em;
+    width: 30em;
+    background: var(--form-message-input-bg-color);
+    border: 1px solid var(--form-message-border-input-color);
+    color: var(--form-message-input-text-color);
+    border-radius: 1.8em;
+    font-size: 0.95em;
+    font-weight: 200;
+}
+
+.form-message__input:focus {
+    outline: none;
+    background: var(--form-message-input-bg-focus-color);
+
+
+}

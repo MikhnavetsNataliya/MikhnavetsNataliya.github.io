@@ -1,0 +1,47 @@
+@import "../../style.css";
+
+:root {
+    --header-top-color: var(--honeydew);
+    --header-top-quote-color: var(--royal-blue);
+    --header-top-quote-rus-color: var(--raven);
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+    padding: 1.5em 0 1.5em 0;
+}
+
+.logo-header {
+    margin: 0;
+    width: 24rem;
+    height: 6rem;
+}
+
+.header-top___quote {
+    margin: 0 1em 0 6em;
+    text-align: right;
+    font-family: 'Laila', serif;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--header-top-quote-color);
+}
+
+.header-top___quote_rus {
+    color: var(--header-top-quote-rus-color)
+}
+
+.header-top___quote_font {
+    font-style: normal;
+}
+
+.header-top___quote_font:before {
+    content: "\2014";
+    padding-right: 1em;
+}

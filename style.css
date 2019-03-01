@@ -1,0 +1,36 @@
+@import url(./fonts/laila);
+@import url(./fonts/montserrat);
+
+:root {
+    --honeydew: #f9faf9;
+    --gainsboro: #e1e1e1;
+    --medium-gray-red: #777777;
+    --raven: #6c757d;
+    --baltic-sea: #343a40;
+    --nero: #151515;
+    --cornflower-blue: #7897f1;
+    --royal-blue: #1e52e8;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Laila', serif;
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
