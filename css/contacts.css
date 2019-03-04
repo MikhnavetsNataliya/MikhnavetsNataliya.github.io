@@ -5,11 +5,10 @@
 @import url(../components/contact/contact-connection.css);
 @import url(../components/footer/footer.css);
 
-
 :root {
     --form-message-color: var(--medium-gray-red);
     --header-intro-title-color: var(--nero);
-    --header-intro-title-border-color: var(--medium-gray-red);
+    --header-intro-title-border-color: var(--gainsboro);
     --contact-contacts-bg-color: var(--honeydew);
     --landing-footer-top-bg-color: var(--baltic-sea);
     --landing-footer-bottom-bg-color: var(--nero);
@@ -25,18 +24,14 @@
 }
 
 .header-intro__title {
-    padding: 0;
-    margin: 3em 0;
-}
-
-.header-intro__title {
     position: relative;
-    margin: 0;
+    margin: 2em 0;
     padding-left: 2em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     color: var(--header-intro-title-color);
+    font-size: 1.5em;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--header-intro-title-border-color);
+    border-bottom: 0.1em solid var(--header-intro-title-border-color);
 }
 
 .header-intro__title::before {
@@ -45,7 +40,7 @@
     left: 0;
     display: block;
     background-image: url("./../image/marker.svg");
-    background-size: 1.25em 1.25em;
+    background-size: 1.2em 1.2em;
     background-repeat: no-repeat;
     width: 1.25em;
     height: 1.25em;
@@ -60,7 +55,6 @@
     position: relative;
     margin-top: -1.7em;
     z-index: -5;
-
 }
 
 .header-image::before, .header-image::after {
@@ -70,7 +64,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-
 }
 
 .header-image::after {
@@ -87,16 +80,10 @@
     text-align: center;
 }
 .header-image__title {
-    /*position: relative;
-    z-index: 5;
-    margin: 0 auto;
-    padding: 7em 0;
-    text-align: center;*/
     color: white;
     font-size: 3em;
     line-height: 3;
     text-transform: uppercase;
-
 }
 
 

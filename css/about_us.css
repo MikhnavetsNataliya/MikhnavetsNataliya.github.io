@@ -1,0 +1,172 @@
+@import "./../style.css";
+@import url(./../components/header/header.css);
+@import url(../components/footer/footer.css);
+@import url(./../css/contacts.css);
+
+:root {
+    --header-image-bg-opacity-color: var(--nero);
+    --block-about-text-color: var(--raven);
+    --block-about-title-color: var(--nero);
+    --block-seccess-item-title-color: var(--nero);
+    --block-success-bg-color: var(--honeydew);
+
+    --landing-footer-top-bg-color: var(--baltic-sea);
+    --landing-footer-bottom-bg-color: var(--nero);
+}
+
+/*-----header-----*/
+.header-image {
+    background: url("./../image/about_us.jpg") top left no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    position: relative;
+    margin-top: -1.7em;
+    z-index: -5;
+}
+
+.header-image::before, .header-image::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-image::after {
+    background: var(--header-image-bg-opacity-color);
+    opacity: 0.4;
+}
+
+.header-image__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10em 0;
+    text-align: center;
+}
+
+.header-image__title {
+    color: white;
+    font-size: 3em;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+/*-----about-us__main part-----*/
+.about-us {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    color: var(--block-about-text-color);
+}
+
+.block-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 1170px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #00B89A;
+}
+
+.block-about__content {
+    width: 30%;
+    margin-right: 1.5em;
+
+}
+
+.block-about__title {
+    font-size: 2.6em;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--block-about-title-color);
+}
+
+.block-about__content_text {
+
+    text-align: justify;
+}
+
+.block-success {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--block-success-bg-color);
+}
+
+.header-intro__title {
+    width: 1170px;
+    margin: 1em auto;
+}
+
+.block-success__part {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.block-success__item {
+    width: 33.33%;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.block-success__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--block-seccess-item-title-color);
+    line-height: 2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.block-success__icon::before {
+    margin: 0 auto;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    width: 6em;
+    height: 6em;
+}
+.cash::before {
+    background-image: url("./../image/icon_cash.png");
+}
+
+.person::before {
+    background-image: url("./../image/icon-mechanic.png");
+}
+
+.equipment::before {
+    background-image: url("../image/icon-equipment.png");
+}
+.quality::before {
+    background-image: url("../image/icon-quality.png");
+}
+.timing::before {
+    background-image: url("./../image/icon-time.png");
+}
+.guarantee::before {
+    background-image: url("./../image/icon_ctb.png");
+}
+
+
+
+
+/*-----footer-----*/
+.landing-footer-top {
+    background: var(--landing-footer-top-bg-color);
+}
+
+.landing-footer-bottom {
+    background: var(--landing-footer-bottom-bg-color);
+}

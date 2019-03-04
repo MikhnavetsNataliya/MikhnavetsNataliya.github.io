@@ -1,0 +1,118 @@
+@import "./../style.css";
+@import url(./../components/header/header.css);
+@import url(../components/footer/footer.css);
+@import url(./../css/contacts.css);
+
+:root {
+    --header-image-bg-opacity-color: var(--nero);
+    --price-table-border-bottom-color: var(--gainsboro);
+    --price-table-bg-th-color: var(--royal-blue);
+    --price-table-text-th-color:var(--honeydew);
+    --price-table-text-td-color:  var(--medium-gray-red);
+
+    --landing-footer-top-bg-color: var(--baltic-sea);
+    --landing-footer-bottom-bg-color: var(--nero);
+}
+
+.header-image {
+    background: url("./../image/price.jpg") top left no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    position: relative;
+    margin-top: -1.7em;
+    z-index: -5;
+}
+
+.header-image::before, .header-image::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-image::after {
+    background: var(--header-image-bg-opacity-color);
+    opacity: 0.4;
+}
+
+.header-image__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10em 0;
+    text-align: center;
+}
+
+.header-image__title {
+    color: white;
+    font-size: 3em;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+.block-price {
+    display: block;
+    margin: 0.313em auto;
+    width: 100%;
+    max-width: 1170px;
+    font-size: 1rem;
+}
+
+.table-price {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 0.07em solid var(--price-table-border-bottom-color);
+    background: white;
+}
+
+.table-price th,
+.tire-name {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.72;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--price-table-bg-th-color);
+    color: var(--price-table-text-th-color);
+}
+
+.tire-name {
+    background: white;
+    color: var(--price-table-text-td-color);
+}
+
+.service-name, .service-price {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.95em;
+    text-align: left;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: var(--price-table-text-td-color);
+}
+
+.service-price {
+    text-align: center;
+}
+
+
+
+
+
+
+/*-----footer-----*/
+.landing-footer-top {
+    background: var(--landing-footer-top-bg-color);
+}
+
+.landing-footer-bottom {
+    background: var(--landing-footer-bottom-bg-color);
+}

@@ -69,10 +69,3 @@
     outline: none;
     color: var(--footer-item-focus-color);
 }
-
-.footer-side__item_phone::before {
-    background: url("../../image/telephone.svg") 5% no-repeat;
-    content: '  ';
-    position: absolute;
-
-}
