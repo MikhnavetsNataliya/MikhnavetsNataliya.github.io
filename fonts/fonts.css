@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/montserrat/");
+}
+
+@font-face {
+    font-family: 'Laila', serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/laila");
+}
+
+
+
+
+/*@font-face {
+    font-family: "UbuntuRegular";
+    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot");
+    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuRegular/UbuntuRegular.woff") format("woff"),
+    url("../fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/

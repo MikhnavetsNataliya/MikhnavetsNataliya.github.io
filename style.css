@@ -1,5 +1,4 @@
-@import url(./fonts/laila);
-@import url(./fonts/montserrat);
+@import url(./fonts/fonts.css);
 
 :root {
     --honeydew: #f9faf9;
@@ -12,25 +11,6 @@
     --royal-blue: #1e52e8;
 }
 
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'Laila', serif;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 100;
-}
-
 body {
     margin: 0;
 }
-
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-
