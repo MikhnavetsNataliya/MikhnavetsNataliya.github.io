@@ -5,8 +5,7 @@
 
 :root {
     --header-image-bg-opacity-color: var(--nero);
-
-
+    --service-contents-text-color: var(--medium-gray-red);
     --landing-footer-top-bg-color: var(--baltic-sea);
     --landing-footer-bottom-bg-color: var(--nero);
 }
@@ -51,27 +50,56 @@
 }
 
 /*-------main part-----------*/
+.service__item_marker{
+    position: relative;
+    margin: 1em 0;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    color: var(--header-intro-title-color);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 0.1em solid var(--header-intro-title-border-color);
+}
+
+.service__item_marker::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("./../image/marker.svg");
+    background-size: 1.2em 1.2em;
+    background-repeat: no-repeat;
+    width: 1.25em;
+    height: 1.25em;
+    content: "";
+}
+
 .service__item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-around;
     width: 100%;
-    max-width: 1170px;
+    max-width: 73.125rem;
     margin: 2em auto;
 }
 
 .service__content {
     box-sizing: border-box;
-    width: 60%;
+    width: 40em;
     margin: 0;
 }
 
 .service__img {
-    width: 40%;
-    flex-wrap: wrap;
-
+    width: 33em;
+    text-align: center;
     margin: 0;
+    padding: 0;
 }
 
-
+.service__contents {
+    font-size: 1em;
+    text-align: justify;
+    color: var(--service-contents-text-color);
+    padding: 0;
+}

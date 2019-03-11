@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 1em;
-    width: 1170px;
+    width: 73.125rem;
     background: var(--footer-top-bg-color);
     color: var(--footer-top-text-color);
     font-size: 1rem;
@@ -26,15 +26,17 @@
 }
 
 .footer-top__part {
-    width: 26%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 19em;
 }
 
-.footer-top__part:nth-child(3){
-    margin-left: 6em;
-}
+/*.footer-top__part:nth-child(2){
+   margin-right: 2em;
+}*/
 
 .footer-logo {
-    width: 22%;
+    width: 16em;
 }
 
 .logo-img {
@@ -49,10 +51,16 @@
     color: var(--footer-top-tittle-color);
 }
 
-.footer-side {
+.footer-side,
+.footer-side p
+{
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+
+.footer-side p {
+    padding-right: 5em;
 }
 
 .footer-side__item {

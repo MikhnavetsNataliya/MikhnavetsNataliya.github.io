@@ -47,7 +47,6 @@
     content: "";
 }
 
-
 .header-image {
     background: url("./../image/contact.jpg") top left no-repeat;
     background-size: cover;
@@ -85,7 +84,6 @@
     line-height: 3;
     text-transform: uppercase;
 }
-
 
 .form-message {
     padding: 1.2em 0 1.2em;

@@ -11,7 +11,6 @@
     --price-table-text-td-color:  var(--medium-gray-red);
     --table-price-bg-tr-color: var(--honeydew);
     --table-price-notice-color: var(--medium-gray-red);
-
     --landing-footer-top-bg-color: var(--baltic-sea);
     --landing-footer-bottom-bg-color: var(--nero);
 }
@@ -72,7 +71,6 @@
 .price__promo span {
     text-transform: uppercase;
 }
-
 
 .price__discription {
     display: block;
@@ -157,10 +155,6 @@
 .table-price_bg:nth-of-type(2n+1) {
     background: var(--table-price-bg-tr-color);
 }
-
-
-
-
 
 /*-----footer-----*/
 .landing-footer-top {
