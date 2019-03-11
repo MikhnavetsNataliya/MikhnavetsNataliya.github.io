@@ -1,4 +1,7 @@
 @import url(./fonts/fonts.css);
+@import url(./components/header/header.css);
+@import url(./components/footer/footer.css);
+@import url(./css/contacts.css);
 
 :root {
     --honeydew: #f9faf9;
@@ -9,8 +12,182 @@
     --nero: #151515;
     --cornflower-blue: #7897f1;
     --royal-blue: #1e52e8;
+
+    --header-image-bg-opacity-color: var(--nero);
+    --index-service-link-color: var(--honeydew);
+    --index-partners-title-color: var(--baltic-sea);
+    --index-partners-border-color: var(--royal-blue);
 }
 
 body {
     margin: 0;
+}
+.header-image {
+    background: url("./image/index-main.jpg") top left no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    position: relative;
+    margin-top: -1.7em;
+    z-index: -5;
+}
+
+.header-image::before, .header-image::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header-image::after {
+    background: var(--header-image-bg-opacity-color);
+    opacity: 0.4;
+}
+
+.header-image__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10em 0;
+    text-align: center;
+}
+
+.header-image__title {
+    width: 50rem;
+    color: white;
+    font-size: 3em;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+/*-----Перечень услуг-----*/
+.main-services {
+    width: 100%;
+    max-width: 73.125rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-services__position {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2rem 0 2rem;
+    width: 100%;
+}
+
+.main-service {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 0.13em;
+    padding-right: 0.95em;
+    padding-left: 0.95em;
+}
+
+/*@media (min-width: 768px){
+    flex: 0 0 50%;
+    max-width:50%;
+}*/
+
+.main-service__item {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1.875em;
+    width: 100%;
+    height: 18em;
+}
+
+.main-service_link {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('./image/about_us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main-service_link::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--header-image-bg-opacity-color);
+    opacity: 0.7;
+    content: ' ';
+    z-index: 0;
+}
+
+.main-service {
+    box-sizing: border-box;
+    width: 23rem;
+    height: 18rem;
+    margin: 0.6em;
+    padding: 0;
+
+}
+
+.link-title {
+    position: relative;
+    width: 15em;
+    height: 2em;
+    margin-bottom: 3em;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    z-index: 20;
+}
+
+.link-title::before {
+    position: absolute;
+    top: -7em;
+    left: 6em;
+    display: block;
+    background: url("./image/marker-service.png");
+    background-size: 3em 3em;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 3em;
+    content: "";
+}
+
+/*-----Партнеры-----*/
+
+.partners {
+    margin: 2em auto;
+    width: 100%;
+    max-width: 73.125rem;
+}
+
+.main-pertners {
+    display: inline-block;
+    text-align: center;
+}
+
+.main-title {
+    margin: 2rem auto;
+    max-width: 73.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.72em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--index-partners-title-color);
+    border-bottom: 0.09rem solid var(--index-partners-border-color);
+}
+
+.main-pertners img {
+    margin: 1.5em;
 }
