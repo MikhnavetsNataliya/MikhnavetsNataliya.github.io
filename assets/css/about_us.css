@@ -1,7 +1,7 @@
-@import "./../style.css";
-@import url(./../components/header/header.css);
+@import "style.css";
+@import url(../components/header/header.css);
 @import url(../components/footer/footer.css);
-@import url(./../css/contacts.css);
+@import url(contacts.css);
 
 :root {
     --header-image-bg-opacity-color: var(--nero);
@@ -16,7 +16,7 @@
 
 /*-----header-----*/
 .header-image {
-    background: url("./../image/about_us.jpg") top left no-repeat;
+    background: url("../imagebout_us.jpg") top left no-repeat;
     background-size: cover;
     font-size: 1rem;
     position: relative;
@@ -139,11 +139,11 @@
     height: 6em;
 }
 .cash::before {
-    background-image: url("./../image/icon_cash.png");
+    background-image: url("../imagecon_cash.png");
 }
 
 .person::before {
-    background-image: url("./../image/icon-mechanic.png");
+    background-image: url("../imagecon-mechanic.png");
 }
 
 .equipment::before {
@@ -153,10 +153,10 @@
     background-image: url("../image/icon-quality.png");
 }
 .timing::before {
-    background-image: url("./../image/icon-time.png");
+    background-image: url("../imagecon-time.png");
 }
 .guarantee::before {
-    background-image: url("./../image/icon_ctb.png");
+    background-image: url("../imagecon_ctb.png");
 }
 
 /*-----footer-----*/

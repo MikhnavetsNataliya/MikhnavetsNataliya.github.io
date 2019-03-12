@@ -1,7 +1,7 @@
-@import "./../style.css";
-@import url(./../components/header/header.css);
+@import "style.css";
+@import url(../components/header/header.css);
 @import url(../components/form/form-message.css);
-@import url(./../components/button/button.css);
+@import url(../components/button/button.css);
 @import url(../components/contact/contact-connection.css);
 @import url(../components/footer/footer.css);
 
@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     display: block;
-    background-image: url("./../image/marker.svg");
+    background-image: url("../imagearker.svg");
     background-size: 1.2em 1.2em;
     background-repeat: no-repeat;
     width: 1.25em;
@@ -48,7 +48,7 @@
 }
 
 .header-image {
-    background: url("./../image/contact.jpg") top left no-repeat;
+    background: url("../imageontact.jpg") top left no-repeat;
     background-size: cover;
     font-size: 1rem;
     position: relative;

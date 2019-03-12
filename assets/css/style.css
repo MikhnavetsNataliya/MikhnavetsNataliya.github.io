@@ -1,7 +1,7 @@
-@import url(./fonts/fonts.css);
-@import url(./components/header/header.css);
-@import url(./components/footer/footer.css);
-@import url(./css/contacts.css);
+@import url(../fonts/fonts.css);
+@import url(../components/header/header.css);
+@import url(../components/footer/footer.css);
+@import url(contacts.css);
 
 :root {
     --honeydew: #f9faf9;
@@ -21,9 +21,10 @@
 
 body {
     margin: 0;
+    font-family: Montserrat, sans-serif;
 }
 .header-image {
-    background: url("./image/index-main.jpg") top left no-repeat;
+    background: url("../image/index-main.jpg") top left no-repeat;
     background-size: cover;
     font-size: 1rem;
     position: relative;
@@ -56,6 +57,7 @@ body {
 
 .header-image__title {
     width: 50rem;
+    margin: 0 auto;
     color: white;
     font-size: 3em;
     line-height: 2;
@@ -106,7 +108,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('./image/about_us.jpg');
+    background-image: url('../image/about_us.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -154,7 +156,7 @@ body {
     top: -7em;
     left: 6em;
     display: block;
-    background: url("./image/marker-service.png");
+    background: url("../image/marker-service.png");
     background-size: 3em 3em;
     background-repeat: no-repeat;
     width: 3em;

@@ -2,14 +2,14 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url("./fonts/montserrat/");
+    src: url("/montserrat/");
 }
 
 @font-face {
     font-family: 'Laila', serif;
     font-style: normal;
     font-weight: normal;
-    src: url("./fonts/laila");
+    src: url("a-Bold.ttf");
 }
 
 
