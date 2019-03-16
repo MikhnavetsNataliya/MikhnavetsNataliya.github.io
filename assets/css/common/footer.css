@@ -1,0 +1,120 @@
+@import "../style.css";
+
+:root {
+    --landing-footer-top-bg-color: var(--baltic-sea);
+    --footer-top-text-color: var(--raven);
+    --footer-top-tittle-color: var(--gainsboro);
+    --footer-item-text-color: var(--medium-gray-red);
+    --footer-item-hover-color: var(--royal-blue);
+    --footer-item-focus-color: var(--cornflower-blue);
+    --landing-footer-bottom-bg-color: var(--nero);
+    --footer-bottom-text-color: #bdbdbd;
+}
+
+.landing-footer__top {
+    background: var(--landing-footer-top-bg-color);
+}
+
+.footer-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0.4em 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 73.125rem;
+    color: var(--footer-top-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+}
+
+.footer-top__part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 18em;
+}
+
+.logo-img {
+    padding: 5em 0 5em 0;
+    width: 8em;
+    height: 8em;
+}
+
+.footer-side__title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--footer-top-tittle-color);
+}
+
+.footer-side,
+.footer-side p {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-side__item {
+    text-decoration: none;
+    color: var(--footer-item-text-color);
+}
+
+.footer-side__item:hover,
+.footer-side__item:active,
+.footer-side__item:focus {
+    color: var(--footer-item-hover-color);
+}
+
+.footer-side__item:focus {
+    outline: none;
+    color: var(--footer-item-focus-color);
+}
+
+.landing-footer__bottom {
+    background: var(--landing-footer-bottom-bg-color);
+}
+
+.paycards {
+    padding-top: 0.8em;
+}
+
+.paycards__type_visa-master {
+    padding: 0 0.5em;
+    width: 6em;
+    height: 2em;
+}
+
+.paycards__type_belkard {
+    padding: 0 0.5em;
+    width: 2.4em;
+    height: 2.4em;
+}
+
+.copyright {
+    color: var(--footer-bottom-text-color);
+    font-weight: 600;
+}
+
+@media (max-width: 1170px) {
+    .footer-block {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 590px) {
+    .logo-img {
+        padding-bottom: 0;
+    }
+
+    .footer-block, .footer-top__part {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-side__title {
+        margin-bottom: 0.8em;
+        text-align: center;
+    }
+}

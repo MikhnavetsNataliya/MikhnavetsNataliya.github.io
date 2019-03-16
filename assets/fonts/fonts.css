@@ -2,14 +2,15 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url("/montserrat/");
+    src: url("/montserrat/Montserrat-Regular.otf"),
+    url("/montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Laila', serif;
-    font-style: normal;
+    font-family: 'Architects_Daughter', sans-serifa;
+    font-style:normal;
     font-weight: normal;
-    src: url("a-Bold.ttf");
+    src: url("/Architects_Daughter/ArchitectsDaughter-Regular.ttf") format("truetype");
 }
 
 

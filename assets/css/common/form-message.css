@@ -1,4 +1,4 @@
-@import "../../css/style.css";
+@import "../style.css";
 
 :root {
     --form-message-input-bg-color:var(--honeydew);
@@ -9,20 +9,24 @@
 
 .form-message {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    width: 1170px;
+    width: 100%;
+    max-width: 73.125em;
     font-size: 1rem;
 }
 
 .form-message__personal-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30em;
 }
 
 .form-message__item {
-    margin: 1.3em 0;
+    margin: 0.9em 0;
 }
 
 .form-message__input{
@@ -35,12 +39,23 @@
     color: var(--form-message-input-text-color);
     border-radius: 1.8em;
     font-size: 0.95em;
+    font-family: Montserrat, sans-serif;
     font-weight: 200;
 }
 
 .form-message__input:focus {
     outline: none;
     background: var(--form-message-input-bg-focus-color);
+}
 
+@media (max-width: 1170px) {
+    .form-message {
+        justify-content: center;
+    }
+}
 
+@media (max-width: 730px) {
+    .form-message__input {
+        width: 25em;
+    }
 }

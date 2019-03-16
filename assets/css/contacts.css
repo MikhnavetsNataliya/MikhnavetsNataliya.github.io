@@ -1,24 +1,38 @@
 @import "style.css";
-@import url(../components/header/header.css);
-@import url(../components/form/form-message.css);
-@import url(../components/button/button.css);
-@import url(../components/contact/contact-connection.css);
-@import url(../components/footer/footer.css);
+@import url(common/header.css);
+@import url(common/form-message.css);
+@import url(common/button.css);
+@import url(common/footer.css);
 
 :root {
     --form-message-color: var(--medium-gray-red);
     --header-intro-title-color: var(--nero);
     --header-intro-title-border-color: var(--gainsboro);
     --contact-contacts-bg-color: var(--honeydew);
-    --landing-footer-top-bg-color: var(--baltic-sea);
-    --landing-footer-bottom-bg-color: var(--nero);
+    --contact-connection-title-color: var(--baltic-sea);
+    --contact-connection-text-color: var(--medium-gray-red);
+    --contact-item-link-text-color:var(--medium-gray-red);
+    --contact-item-link-hover-color:var(--royal-blue);
+    --contact-item-link-focus-color:var(--cornflower-blue);
+}
+
+/*-----header-----*/
+.header-image {
+    background: url("../image/about_us_heder.jpg") top left no-repeat;
+    background-size: cover;
+}
+/*-----main-----*/
+.contacts-main {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-intro,
 .form-message {
     padding: 0;
     margin: 0 auto;
-    width: 1170px;
+    width: 100%;
+    max-width: 73.125em;
     font-size: 1rem;
     color: var(--form-message-color);
 }
@@ -35,54 +49,16 @@
 }
 
 .header-intro__title::before {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
-    background-image: url("../imagearker.svg");
+    background-image: url("../image/marker.svg");
     background-size: 1.2em 1.2em;
     background-repeat: no-repeat;
     width: 1.25em;
     height: 1.25em;
     content: "";
-}
-
-.header-image {
-    background: url("../imageontact.jpg") top left no-repeat;
-    background-size: cover;
-    font-size: 1rem;
-    position: relative;
-    margin-top: -1.7em;
-    z-index: -5;
-}
-
-.header-image::before, .header-image::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.header-image::after {
-    background: black;
-    opacity: 0.4;
-}
-
-.heder-image__content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10em 0;
-    text-align: center;
-}
-.header-image__title {
-    color: white;
-    font-size: 3em;
-    line-height: 3;
-    text-transform: uppercase;
 }
 
 .form-message {
@@ -97,18 +73,81 @@ input[type=submit] {
 }
 
 .contacts {
+    display: flex;
     padding: 2em 0;
     background: var(--contact-contacts-bg-color);
+    /*visibility: visible;
+    animation-name: growRight;*/
+}
+
+/*@keyframes growRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(40px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}*/
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 73.125em;
+}
+
+.contact-item {
+    width: 100%;
+    max-width: 18.25em;
+}
+
+.contact-item__title {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: var(--contact-connection-title-color);
+}
+
+.contact-item__content {
+    color: var(--contact-connection-text-color);
+    font-weight: 400;
+}
+
+.contact-item__link {
+    text-decoration: none;
+    color: var(--contact-item-link-text-color);
+}
+
+.contact-item__link:hover,
+.contact-item__link:active,
+.contact-item__link:focus {
+    color: var(--contact-item-link-hover-color);
+}
+
+.contact-item__link:focus {
+    outline: none;
+    color: var(--contact-item-link-focus-color);
 }
 
 .contact-map {
     width: 100%;
 }
 
-.landing-footer-top {
-    background: var(--landing-footer-top-bg-color);
-}
+@media (max-width: 1170px) {
+    .contact {
+        justify-content: center;
+    }
 
-.landing-footer-bottom {
-    background: var(--landing-footer-bottom-bg-color);
+    .header-intro__title {
+        font-size: 1.3em;
+    }
 }

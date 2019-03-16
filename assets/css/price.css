@@ -1,59 +1,24 @@
 @import "style.css";
-@import url(../components/header/header.css);
-@import url(../components/footer/footer.css);
+@import url(common/header.css);
+@import url(common/footer.css);
 @import url(contacts.css);
 
 :root {
-    --header-image-bg-opacity-color: var(--nero);
+    --table-price-notice-color: var(--medium-gray-red);
     --price-table-border-bottom-color: var(--honeydew);
     --price-table-bg-th-color: var(--royal-blue);
     --price-table-text-th-color:var(--honeydew);
     --price-table-text-td-color:  var(--medium-gray-red);
     --table-price-bg-tr-color: var(--honeydew);
-    --table-price-notice-color: var(--medium-gray-red);
-    --landing-footer-top-bg-color: var(--baltic-sea);
-    --landing-footer-bottom-bg-color: var(--nero);
 }
 
+/*-----header-----*/
 .header-image {
-    background: url("../imagerice.jpg") top left no-repeat;
+    background: url("../image/price.jpg") top left no-repeat;
     background-size: cover;
-    font-size: 1rem;
-    position: relative;
-    margin-top: -1.7em;
-    z-index: -5;
 }
 
-.header-image::before, .header-image::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.header-image::after {
-    background: var(--header-image-bg-opacity-color);
-    opacity: 0.4;
-}
-
-.header-image__content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10em 0;
-    text-align: center;
-}
-
-.header-image__title {
-    color: white;
-    font-size: 3em;
-    line-height: 3;
-    text-transform: uppercase;
-}
-
+/*-----main-----*/
 @keyframes promo {
     0% { color: rgba(232, 34, 19, 1); }
     50% { color: rgba(225, 225, 225, 1); }
@@ -154,13 +119,4 @@
 
 .table-price_bg:nth-of-type(2n+1) {
     background: var(--table-price-bg-tr-color);
-}
-
-/*-----footer-----*/
-.landing-footer-top {
-    background: var(--landing-footer-top-bg-color);
-}
-
-.landing-footer-bottom {
-    background: var(--landing-footer-bottom-bg-color);
 }

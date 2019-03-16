@@ -1,7 +1,6 @@
 @import url(../fonts/fonts.css);
-@import url(../components/header/header.css);
-@import url(../components/footer/footer.css);
-@import url(contacts.css);
+@import url(common/header.css);
+@import url(common/footer.css);
 
 :root {
     --honeydew: #f9faf9;
@@ -13,7 +12,6 @@
     --cornflower-blue: #7897f1;
     --royal-blue: #1e52e8;
 
-    --header-image-bg-opacity-color: var(--nero);
     --index-service-link-color: var(--honeydew);
     --index-partners-title-color: var(--baltic-sea);
     --index-partners-border-color: var(--royal-blue);
@@ -23,45 +21,11 @@ body {
     margin: 0;
     font-family: Montserrat, sans-serif;
 }
+
+/*-----header-----*/
 .header-image {
     background: url("../image/index-main.jpg") top left no-repeat;
     background-size: cover;
-    font-size: 1rem;
-    position: relative;
-    margin-top: -1.7em;
-    z-index: -5;
-}
-
-.header-image::before, .header-image::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.header-image::after {
-    background: var(--header-image-bg-opacity-color);
-    opacity: 0.4;
-}
-
-.header-image__content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10em 0;
-    text-align: center;
-}
-
-.header-image__title {
-    width: 50rem;
-    margin: 0 auto;
-    color: white;
-    font-size: 3em;
-    line-height: 2;
-    text-transform: uppercase;
 }
 
 /*-----Перечень услуг-----*/
@@ -83,10 +47,16 @@ body {
 .main-service {
     display: flex;
     position: relative;
+    box-sizing: border-box;
+    margin: 0.6em;
+    padding: 0;
     width: 100%;
-    min-height: 0.13em;
-    padding-right: 0.95em;
-    padding-left: 0.95em;
+    max-width: 23rem;
+    height: 18rem;
+}
+
+.main-service {
+
 }
 
 /*@media (min-width: 768px){
@@ -108,7 +78,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('../image/about_us.jpg');
+    background-image: url('../image/index-parallax.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,15 +99,6 @@ body {
     opacity: 0.7;
     content: ' ';
     z-index: 0;
-}
-
-.main-service {
-    box-sizing: border-box;
-    width: 23rem;
-    height: 18rem;
-    margin: 0.6em;
-    padding: 0;
-
 }
 
 .link-title {
@@ -165,7 +126,6 @@ body {
 }
 
 /*-----Партнеры-----*/
-
 .partners {
     margin: 2em auto;
     width: 100%;
