@@ -11,7 +11,7 @@
   <section class="header-top">
     <div class="logo-block">
       <a href="./../../index.html">
-        <img class="logo-img__header" src="./../image/logo-name.png" alt="autopoint">
+        <img class="logo-img__header" src="../image/header-footer_image/logo-name.png" alt="autopoint">
       </a>
     </div>
     <div class="quot-block">
@@ -24,25 +24,27 @@
       </blockquote>
     </div>
   </section>
-  <section class="header-bottom">
+  <nav class="topnav" id="myTopnav">
+    <a href="./../../index.html" class="pull">
+      <img src="../image/header-footer_image/logo-name.png" alt="AutoPoint"></a>
     <ul class="header-bottom navbar">
       <li class="navbar__item">
-        <a class="navbar__link" href="/index.html">Главная</a>
+        <a class="navbar__link" href="./../../index.html">Главная</a>
       </li>
       <li class="navbar__item">
-        <a class="navbar__link" href="/assets/page/service.html">Услуги</a>
+        <a class="navbar__link" href="./service.html">Услуги</a>
       </li>
       <li class="navbar__item">
-        <a class="navbar__link" href="/assets/page/price.html">Цены</a>
+        <a class="navbar__link" href="./price.html">Цены</a>
       </li>
       <li class="navbar__item">
-        <a class="navbar__link" href="/assets/page/about_us.html">О нас</a>
+        <a class="navbar__link" href="./about_us.html">О нас</a>
       </li>
       <li class="navbar__item">
-        <a class="navbar__link" href="/assets/page/contacts.html">Контакты</a>
+        <a class="navbar__link" href="./contacts.html">Контакты</a>
       </li>
     </ul>
-  </section>
+  </nav>
   <section class="header-image">
     <div class="header-image__content">
       <h1 class="header-image__title">Цены</h1>
@@ -51,13 +53,23 @@
 </header>
 
 <main class="price">
+
   <h2 class="price__promo"><span>Акция!</span> Бесплатная диагностика подвески при предварительной записи</h2>
   <section class="price__discription">
     <p>В данном прайс-листе представлены не все цены, так как многие услуги являются индивидуальными и цены могут
       зависеть от таких параметров, как год выпуска автомобиля, класс авто, техническое состояние
       узлов/гаек/болтов/креплений.</p>
   </section>
-  <section class="block-price">
+
+  <div class="price-button">
+  <button class="tablink" onclick="openPage('Tire', this)" id="defaultOpen">Шиномонтаж</button>
+  <button class="tablink" onclick="openPage('Repair-tire', this)">Ремонт шин</button>
+  <button class="tablink" onclick="openPage('Oil', this)">Замена масел и технических жидкостей</button>
+  <button class="tablink" onclick="openPage('Repair-bracket', this)">Ремонт подвески</button>
+  <button class="tablink" onclick="openPage('Argon-welding', this)">Аргонная сварка</button>
+  <button class="tablink" onclick="openPage('Expend-mat', this)">Расходные материалы</button>
+  </div>
+  <section id="Tire" class="block-price tabcontent">
     <h3 class="header-intro__title">Шиномонтаж</h3>
     <table class="table-price">
       <tr>
@@ -133,7 +145,7 @@
       NFS, RSC, Kunon Flat, MFS, DSS, DSST и др. взымается надбавка 50% к общей стоимости услуги. В связи с
       трудоемкостью данных работ.</p>
   </section>
-  <section class="block-price">
+  <section id="Repair-tire" class="block-price tabcontent">
     <h3 class="header-intro__title">Ремонт шин</h3>
     <table class="table-price">
       <tr>
@@ -162,7 +174,7 @@
       </tr>
     </table>
   </section>
-  <section class="block-price">
+  <section id="Oil" class="block-price tabcontent">
     <h3 class="header-intro__title">Замена масел и технических жидкостей</h3>
     <table class="table-price">
       <tr>
@@ -219,7 +231,7 @@
       </tr>
     </table>
   </section>
-  <section class="block-price">
+  <section id="Repair-bracket" class="block-price tabcontent">
     <h3 class="header-intro__title">Ремонт подвески</h3>
     <table class="table-price">
       <tr>
@@ -260,7 +272,7 @@
       </tr>
     </table>
   </section>
-  <section class="block-price">
+  <section id="Argon-welding" class="block-price tabcontent">
     <h3 class="header-intro__title">Аргонная сварка</h3>
     <table class="table-price">
       <tr>
@@ -285,7 +297,7 @@
       </tr>
     </table>
   </section>
-  <section class="block-price">
+  <section id="Expend-mat" class="block-price tabcontent">
     <h3 class="header-intro__title">Расходные материалы</h3>
     <table class="table-price">
       <tr>
@@ -335,7 +347,7 @@
     <section class="footer-block">
       <aside class="footer-top__part">
         <section class="footer-side">
-          <img class="logo-img" src="../image/logo-vkladka.png" alt="AutoPoint">
+          <img class="logo-img" src="../image/header-footer_image/logo-vkladka.png" alt="AutoPoint">
         </section>
       </aside>
       <aside class="footer-top__part">
@@ -369,8 +381,8 @@
   <section class="landing-footer__bottom">
     <section class="footer-block">
       <section class="paycards">
-        <img class="paycards__type_visa-master" src="../image/visa-mastercard-монохром.png" alt="visa-master">
-        <img class="paycards__type_belkard" src="../image/belkart-i-монохром.png" alt="belcard">
+        <img class="paycards__type_visa-master" src="../image/header-footer_image/visa-mastercard-монохром.png" alt="visa-master">
+        <img class="paycards__type_belkard" src="../image/header-footer_image/belkart-i-монохром.png" alt="belcard">
       </section>
       <section class="footer-info">
         <p class="copyright"><span>&#169;</span> 2019 AutoPoint</p>
@@ -378,5 +390,9 @@
     </section>
   </section>
 </footer>
+
+
+<script src="./../js/price.js"></script>
+
 </body>
 </html>

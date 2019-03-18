@@ -24,8 +24,13 @@ body {
 
 /*-----header-----*/
 .header-image {
-    background: url("../image/index-main.jpg") top left no-repeat;
+    background: url("../image/page_image/index-main.jpg") top left no-repeat;
     background-size: cover;
+}
+
+.header-image__content_aligning {
+    max-width: 70em;
+    padding-top: 2em;
 }
 
 /*-----Перечень услуг-----*/
@@ -78,7 +83,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('../image/index-parallax.jpg');
+    background-image: url('../image/page_image/index-parallax.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -117,7 +122,7 @@ body {
     top: -7em;
     left: 6em;
     display: block;
-    background: url("../image/marker-service.png");
+    background: url("../image/page_image/marker-service.png");
     background-size: 3em 3em;
     background-repeat: no-repeat;
     width: 3em;
@@ -152,4 +157,13 @@ body {
 
 .main-pertners img {
     margin: 1.5em;
+    height: 6.25em;
+}
+
+.main-pertners img:nth-child(-n+3) {
+
+}
+
+.main-pertners img:nth-child(n+4) {
+
 }

@@ -18,7 +18,7 @@
 
 /*-----header-----*/
 .header-image {
-    background: url("../image/about_us_heder.jpg") top left no-repeat;
+    background: url("../image/page_image/about_us_heder.jpg") top left no-repeat;
     background-size: cover;
 }
 /*-----main-----*/
@@ -53,7 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../image/marker.svg");
+    background-image: url("../image/page_image/marker.svg");
     background-size: 1.2em 1.2em;
     background-repeat: no-repeat;
     width: 1.25em;
