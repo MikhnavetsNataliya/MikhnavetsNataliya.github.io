@@ -3,19 +3,6 @@
 @import url(components/footer.css);
 @import url(contacts.css);
 
-/*
-:root {
-    --table-price-notice-color: var(--medium-gray-red);
-    --price-table-border-bottom-color: var(--honeydew);
-    --price-table-bg-th-color: var(--medium-gray-red);
-    --price-table-text-th-color:var(--honeydew);
-    --price-table-text-td-color:  var(--medium-gray-red);
-    --table-price-bg-tr-color: var(--honeydew);
-    --tablink-bg-color: var(--royal-blue);
-    --tablink-hover-active-bg-color: var(--medium-gray-red);
-}
-*/
-
 /*-----header-----*/
 .header-image {
     background: url("../image/page_image/price.jpg") top left no-repeat;
@@ -23,6 +10,11 @@
 }
 
 /*-----main-----*/
+.price {
+    display: block;
+    padding: 0 .5em;
+    font-size: 1rem;
+}
 @keyframes promo {
     0% { color: rgba(232, 34, 19, 1); }
     50% { color: rgb(249, 250, 249); }
@@ -31,9 +23,10 @@
 
 .price__promo {
     width: 100%;
-    max-width: 1170px;
+    max-width: 73.125em;
     margin: 2em auto;
-    font-size: 2rem;
+    font-size: 2em;
+    text-align: center;
     animation: promo 4s linear infinite;
 }
 
@@ -46,7 +39,7 @@
     margin: 0.313em auto;
     padding: 0;
     width: 100%;
-    max-width: 1170px;
+    max-width: 73.125em;
     text-align: justify;
     font-size: 1.2em;
     line-height: 1.72em;
@@ -57,11 +50,10 @@
 
 .block-price {
     display: block;
-    margin: -0.6em auto;
-    margin-bottom: 5em;
+    margin: -0.6em auto 5em;
     width: 100%;
     max-width: 1170px;
-    font-size: 1rem;
+    font-size: 1em;
 }
 /*-----Вкладки-----*/
 .price-button {
@@ -125,7 +117,6 @@
     background: var(--price-table-bg-th-color);
     color: var(--price-table-text-th-color);
     font-weight: 400;
-
 }
 
 .service-avto,
@@ -165,4 +156,3 @@
 .header-intro__title {
     display: none;
 }
-

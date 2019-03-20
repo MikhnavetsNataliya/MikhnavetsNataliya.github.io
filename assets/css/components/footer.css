@@ -1,16 +1,5 @@
 @import "../style.css";
 
-:root {
-    --landing-footer-top-bg-color: var(--baltic-sea);
-    --footer-top-text-color: var(--raven);
-    --footer-top-tittle-color: var(--gainsboro);
-    --footer-item-text-color: var(--medium-gray-red);
-    --footer-item-hover-color: var(--royal-blue);
-    --footer-item-focus-color: var(--cornflower-blue);
-    --landing-footer-bottom-bg-color: var(--nero);
-    --footer-bottom-text-color: #bdbdbd;
-}
-
 .landing-footer__top {
     background: var(--landing-footer-top-bg-color);
 }
@@ -30,11 +19,25 @@
     letter-spacing: 0.05em;
 }
 
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(40px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .footer-top__part {
     display: flex;
     flex-wrap: wrap;
     width: 18em;
+    visibility: visible;
+    animation: moveRight 0.8s ease-in-out;
 }
+
 
 .logo-img {
     padding: 5em 0 5em 0;

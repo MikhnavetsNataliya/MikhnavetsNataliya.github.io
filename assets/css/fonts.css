@@ -1,34 +1,21 @@
 @font-face {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: url("/MikhnavetsNataliya.github.io/assets/fonts/montserrat/Montserrat-Regular.otf"),
     url("/MikhnavetsNataliya.github.io/assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Architects_Daughter', sans-serifa;
-    font-style:normal;
+    font-family: 'Architects_Daughter', sans-serif;
+    font-style: normal;
     font-weight: normal;
     src: url("/MikhnavetsNataliya.github.io/assets/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Rubik_Mono_One', sans-serifa;
-    font-style:normal;
+    font-family: 'Rubik_Mono_One', sans-serif;
+    font-style: normal;
     font-weight: normal;
     src: url("/MikhnavetsNataliya.github.io/assets/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf") format("truetype");
 }
-
-
-
-
-/*@font-face {
-    font-family: "UbuntuRegular";
-    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot");
-    src: url("../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/UbuntuRegular/UbuntuRegular.woff") format("woff"),
-    url("../fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}*/

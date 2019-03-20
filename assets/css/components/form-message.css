@@ -1,12 +1,5 @@
 @import "../style.css";
 
-:root {
-    --form-message-input-bg-color:var(--honeydew);
-    --form-message-border-input-color: var(--royal-blue);
-    --form-message-input-text-color: var(--royal-blue);
-    --form-message-input-bg-focus-color:var(--gainsboro);
-}
-
 .form-message {
     display: flex;
     flex-flow: row wrap;
@@ -21,6 +14,7 @@
 .form-message__personal-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 30em;
 }

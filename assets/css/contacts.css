@@ -4,27 +4,21 @@
 @import url(components/button.css);
 @import url(components/footer.css);
 
-/*:root {
-    --form-message-color: var(--medium-gray-red);
-    --header-intro-title-color: var(--nero);
-    --header-intro-title-border-color: var(--gainsboro);
-    --contact-contacts-bg-color: var(--honeydew);
-    --contact-connection-title-color: var(--baltic-sea);
-    --contact-connection-text-color: var(--medium-gray-red);
-    --contact-item-link-text-color:var(--medium-gray-red);
-    --contact-item-link-hover-color:var(--royal-blue);
-    --contact-item-link-focus-color:var(--cornflower-blue);
-}*/
-
 /*-----header-----*/
 .header-image {
     background: url("../image/page_image/about_us_heder.jpg") top left no-repeat;
     background-size: cover;
 }
+
 /*-----main-----*/
 .contacts-main {
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
+}
+
+.contacts-main_form {
+    padding: 0.5em 0.5em;
 }
 
 .header-intro,
@@ -33,7 +27,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 73.125em;
-    font-size: 1rem;
+    font-size: 1em;
     color: var(--form-message-color);
 }
 
@@ -46,6 +40,7 @@
     font-size: 1.5em;
     text-transform: uppercase;
     border-bottom: 0.1em solid var(--header-intro-title-border-color);
+    z-index: -2;
 }
 
 .header-intro__title::before {
@@ -59,6 +54,7 @@
     width: 1.25em;
     height: 1.25em;
     content: "";
+    z-index: -2;
 }
 
 .form-message {
@@ -74,29 +70,17 @@ input[type=submit] {
 
 .contacts {
     display: flex;
-    padding: 2em 0;
+    padding: .5em .5em;
     background: var(--contact-contacts-bg-color);
-    /*visibility: visible;
-    animation-name: growRight;*/
+    z-index: -10;
 }
-
-/*@keyframes growRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(40px, 0, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}*/
 
 .contact {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
     padding-bottom: 2em;
     margin: 0 auto;
     width: 100%;

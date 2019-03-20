@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Montserrat, sans-serif;
+    font-size: 1rem;
 }
 
 /*-----header-----*/
@@ -22,7 +23,7 @@ body {
 /*-----Перечень услуг-----*/
 .main-services {
     width: 100%;
-    max-width: 73.125rem;
+    max-width: 73.125em;
     margin: 0 auto;
     text-align: center;
 }
@@ -31,7 +32,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 2rem 0 2rem;
+    margin: 2em 0 2em;
     width: 100%;
 }
 
@@ -42,16 +43,10 @@ body {
     margin: 0.6em;
     padding: 0;
     width: 100%;
-    max-width: 23rem;
-    height: 18rem;
+    max-width: 23em;
+    height: 18em;
     z-index: -3;
-
 }
-
-/*@media (min-width: 768px){
-    flex: 0 0 50%;
-    max-width:50%;
-}*/
 
 .main-service__item {
     display: flex;
@@ -96,7 +91,7 @@ body {
     height: 2em;
     margin-bottom: 3em;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-transform: uppercase;
     z-index: 20;
 }
@@ -118,7 +113,7 @@ body {
 .partners {
     margin: 2em auto;
     width: 100%;
-    max-width: 73.125rem;
+    max-width: 73.125em;
 }
 
 .main-pertners {
@@ -127,11 +122,11 @@ body {
 }
 
 .main-title {
-    margin: 2rem auto;
-    max-width: 73.125rem;
+    margin: 2em auto;
+    max-width: 73.125em;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 1.72em;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -142,12 +137,4 @@ body {
 .main-pertners img {
     margin: 1.5em;
     height: 6.25em;
-}
-
-.main-pertners img:nth-child(-n+3) {
-
-}
-
-.main-pertners img:nth-child(n+4) {
-
 }

@@ -48,4 +48,39 @@
     --contact-item-link-text-color:var(--medium-gray-red);
     --contact-item-link-hover-color:var(--royal-blue);
     --contact-item-link-focus-color:var(--cornflower-blue);
+
+    /*-----Components: header-----*/
+    --header-top-quote-color: var(--royal-blue);
+    --header-top-quote-rus-color: var(--raven);
+    --header-bottom-bg-color: var(--baltic-sea);
+    --header-bottom-color: var(--honeydew);
+    --header-bottom-hover-bg-color: var(--royal-blue);
+    --header-bottom-active-focus-color: var(--royal-blue);
+    --header-bottom-active-focus-bg-color: var(--baltic-sea);
+    --header-image-bg-after-color: var(--medium-gray-red);
+    --header-image-title-color: var(--honeydew);
+    --header-image-bg-opacity-color: var(--raven);
+
+    /*-----Components: footer-----*/
+    --landing-footer-top-bg-color: var(--baltic-sea);
+    --footer-top-text-color: var(--raven);
+    --footer-top-tittle-color: var(--gainsboro);
+    --footer-item-text-color: var(--medium-gray-red);
+    --footer-item-hover-color: var(--royal-blue);
+    --footer-item-focus-color: var(--cornflower-blue);
+    --landing-footer-bottom-bg-color: var(--nero);
+    --footer-bottom-text-color: #bdbdbd;
+
+    /*-----Components: button-----*/
+    --button-border-color: var(--royal-blue);
+    --button-bg-color: var(--royal-blue);
+    --button-text-color: var(--honeydew);
+    --button-hover-bg-color: var(--cornflower-blue);
+    --button-focus-color: var(--cornflower-blue);
+
+    /*-----Components: form-message-----*/
+    --form-message-input-bg-color:var(--honeydew);
+    --form-message-border-input-color: var(--royal-blue);
+    --form-message-input-text-color: var(--royal-blue);
+    --form-message-input-bg-focus-color:var(--gainsboro);
 }
