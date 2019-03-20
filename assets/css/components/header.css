@@ -1,4 +1,5 @@
 @import "../style.css";
+@import url(../fonts.css);
 
 :root {
     --header-top-quote-color: var(--royal-blue);
@@ -207,6 +208,7 @@ a.pull,
     margin: 0 auto;
     padding-top: 4em;
     color: white;
+    font-family: Rubik_Mono_One, sans-serif;
     font-size: 3em;
     line-height: 3;
     letter-spacing: 0.15em;

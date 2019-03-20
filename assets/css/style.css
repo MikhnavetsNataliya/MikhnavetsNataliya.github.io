@@ -1,21 +1,7 @@
-@import url(../fonts/fonts.css);
-@import url(common/header.css);
-@import url(common/footer.css);
-
-:root {
-    --honeydew: #f9faf9;
-    --gainsboro: #e1e1e1;
-    --medium-gray-red: #777777;
-    --raven: #6c757d;
-    --baltic-sea: #343a40;
-    --nero: #151515;
-    --cornflower-blue: #7897f1;
-    --royal-blue: #1e52e8;
-
-    --index-service-link-color: var(--honeydew);
-    --index-partners-title-color: var(--baltic-sea);
-    --index-partners-border-color: var(--royal-blue);
-}
+@import url(fonts.css);
+@import url(colors.css);
+@import url(components/header.css);
+@import url(components/footer.css);
 
 body {
     margin: 0;
@@ -58,9 +44,7 @@ body {
     width: 100%;
     max-width: 23rem;
     height: 18rem;
-}
-
-.main-service {
+    z-index: -3;
 
 }
 

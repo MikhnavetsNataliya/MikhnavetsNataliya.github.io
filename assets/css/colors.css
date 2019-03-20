@@ -1,0 +1,51 @@
+@import "style.css";
+
+:root {
+    --honeydew: #f9faf9;
+    --gainsboro: #e1e1e1;
+    --medium-gray-red: #777777;
+    --raven: #6c757d;
+    --baltic-sea: #343a40;
+    --nero: #151515;
+    --cornflower-blue: #7897f1;
+    --royal-blue: #1e52e8;
+
+    /*-----Главная-----*/
+    --index-service-link-color: var(--honeydew);
+    --index-partners-title-color: var(--baltic-sea);
+    --index-partners-border-color: var(--royal-blue);
+
+    /*-----Услуги-----*/
+    --service-item-color: var(--nero);
+    --service-item-border-color: var(--gainsboro);
+    --service-contents-text-color: var(--medium-gray-red);
+
+    /*-----Цены-----*/
+    --table-price-notice-color: var(--medium-gray-red);
+    --price-table-border-bottom-color: var(--honeydew);
+    --price-table-bg-th-color: var(--medium-gray-red);
+    --price-table-text-th-color:var(--honeydew);
+    --price-table-text-td-color:  var(--medium-gray-red);
+    --table-price-bg-tr-color: var(--honeydew);
+    --tablink-bg-color: var(--royal-blue);
+    --tablink-hover-active-bg-color: var(--medium-gray-red);
+
+    /*-----О нас-----*/
+    --block-about-text-color: var(--raven);
+    --block-about-title-color: var(--nero);
+    --block-success-bg-color: var(--honeydew);
+    --success-title-color: var(--nero);
+    --success-title-border-color: var(--gainsboro);
+    --block-seccess-item-title-color: var(--nero);
+
+    /*-----Контакты-----*/
+    --form-message-color: var(--medium-gray-red);
+    --header-intro-title-color: var(--nero);
+    --header-intro-title-border-color: var(--gainsboro);
+    --contact-contacts-bg-color: var(--honeydew);
+    --contact-connection-title-color: var(--baltic-sea);
+    --contact-connection-text-color: var(--medium-gray-red);
+    --contact-item-link-text-color:var(--medium-gray-red);
+    --contact-item-link-hover-color:var(--royal-blue);
+    --contact-item-link-focus-color:var(--cornflower-blue);
+}

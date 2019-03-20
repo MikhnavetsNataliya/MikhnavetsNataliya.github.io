@@ -1,28 +1,35 @@
 @import "style.css";
-@import url(common/header.css);
-@import url(common/footer.css);
+@import url(components/header.css);
+@import url(components/footer.css);
 @import url(contacts.css);
 
-:root {
+/*:root {
     --service-item-color: var(--nero);
     --service-item-border-color: var(--gainsboro);
     --service-contents-text-color: var(--medium-gray-red);
-}
+}*/
 
 /*-----header-----*/
 .header-image {
-    background: url("../image/service/") top left no-repeat;
+    background: url("../image/page_image/service_heder.jpg") top left no-repeat;
     background-size: cover;
 }
 
 /*-------main part-----------*/
-.service__item_marker{
+.service-main {
+    display: block;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+.service__item_marker {
     position: relative;
     margin: 1em 0;
     padding-left: 2em;
     padding-bottom: 1em;
     color: var(--service-item-color);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-transform: uppercase;
     border-bottom: 0.1em solid var(--service-item-border-color);
 }
@@ -54,6 +61,7 @@
     box-sizing: border-box;
     width: 40em;
     margin: 0;
+    padding: 0 1em;
 }
 
 .service__img {
@@ -64,13 +72,16 @@
 }
 
 .service__img img {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 
 .service__contents {
+    padding: 0;
+    font-family: Montserrat, sans-serif;
     font-size: 1em;
     text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
     color: var(--service-contents-text-color);
-    padding: 0;
 }
