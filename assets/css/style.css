@@ -62,7 +62,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('../image/page_image/index-parallax.jpg');
+    background-image: url('../image/page_image/index-backdrop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -137,4 +137,12 @@ body {
 .main-pertners img {
     margin: 1.5em;
     height: 6.25em;
+}
+
+@media screen and (max-width: 820px) {
+    .header-image__title_media {
+        font-size: 1em;
+        padding-top: 2em;
+    }
+
 }

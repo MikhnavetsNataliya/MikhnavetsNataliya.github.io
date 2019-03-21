@@ -60,6 +60,9 @@
     --header-image-bg-after-color: var(--medium-gray-red);
     --header-image-title-color: var(--honeydew);
     --header-image-bg-opacity-color: var(--raven);
+    --header-nav_med-bg-active-color:var(--gainsboro);
+    --header-nav_med-bg-hover-focus-color: var(--gainsboro);
+    --header-nav_med-hover-focus-color: var(--royal-blue);
 
     /*-----Components: footer-----*/
     --landing-footer-top-bg-color: var(--baltic-sea);

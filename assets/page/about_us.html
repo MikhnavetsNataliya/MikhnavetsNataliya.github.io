@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About us</title>
 
-  <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="./../js/jquery.flexslider-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./../js/Jquary/js/jquery.bxslider.js"></script>
   <script src="./../js/slider.js"></script>
-
-  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+  <link href="./../js/Jquary/css/jquery.bxslider.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="../css/about_us.css">
 
@@ -36,179 +34,169 @@
 
 </head>
 <body>
-<header class="landing-header">
-  <section class="header-top">
-    <div class="logo-block">
-      <a href="./../../index.html" title="AutoPoint">
-        <picture>
-          <source class="logo-img__header" type="image/webp" srcset="./../image/webp_image/logo-name.webp">
-          <img class="logo-img__header" src="./../image/header-footer_image/logo-name.png" alt="autopoint">
-        </picture>
-      </a>
-    </div>
-    <div class="quot-block">
-      <blockquote class="header-top___quote">
-        <p class="header-top___quote_eng">Remember driving is a freedom. I wish you to enjoy every kind of freedom... As
-          long as you don't hurt someone.</p>
-        <p class="header-top___quote_rus">Вождение — это свобода. Наслаждайся любой свободой, не причиняя вред
-          другим.</p>
-        <p class="header-top___quote_font">Darwan Singh Tur</p>
-      </blockquote>
-    </div>
-  </section>
-  <nav class="topnav" id="myTopnav">
-    <a href="../../index.html" class="pull" title="AutoPoint">
-      <img src="./../image/webp_image/logo-name.webp" alt="AutoPoint"></a>
-    <ul class="header-bottom navbar">
-      <li class="navbar__item">
-        <a class="navbar__link" href="./../../index.html" title="Главная">Главная</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="./service.html" title="Услуги">Услуги</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="./price.html" title="Цены">Цены</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="./about_us.html" title="О нас">О нас</a>
-      </li>
-      <li class="navbar__item">
-        <a class="navbar__link" href="./contacts.html" title="Контакты">Контакты</a>
-      </li>
-    </ul>
-  </nav>
-  <section class="header-image">
-    <div class="header-image__content">
-      <h1 class="header-image__title">Услуги</h1>
-    </div>
-  </section>
-</header>
-
-<main class="about-us">
-  <section class="block-about">
-    <section class="block-about__content">
-      <h2 class="block-about__title">Добро пожаловать в Autopoint</h2>
-      <p class="block-about__content_text">AutoPoint много лет избавляет автомобили от различных повреждений и
-        неисправностей. Более подробно о том, чем
-        занимаются наши специалисты, вы узнаете в разделе «Услуги». Сотрудники своим обязанностям они относятся с
-        большой
-        ответственностью, поэтому каждый клиент смело доверяет нам свой автомобиль.
-      </p>
-    </section>
-    <section class="block-about__galary">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="../image/about_us_gallery/img_1.jpg" alt="gallery_1">
-          </li>
-          <li>
-            <img src="../image/about_us_gallery/img_2.jpg" alt="gallery_2">
-          </li>
-          <li>
-            <img src="../image/about_us_gallery/img_4.jpg" alt="gallery_4">
-          </li>
-          <li>
-            <img src="../image/about_us_gallery/img_1.jpg" alt="gallery_5">
-          </li>
-        </ul>
+  <header class="landing-header">
+    <section class="header-top">
+      <div class="logo-block">
+        <a href="./../../index.html" title="AutoPoint">
+            <img class="logo-img__header" src="./../image/header-footer_image/logo-name.png" alt="autopoint">
+        </a>
+      </div>
+      <div class="quot-block">
+        <blockquote class="header-top___quote">
+          <p class="header-top___quote_eng">Remember driving is a freedom. I wish you to enjoy every kind of freedom... As
+            long as you don't hurt someone.</p>
+          <p class="header-top___quote_rus">Вождение — это свобода. Наслаждайся любой свободой, не причиняя вред
+            другим.</p>
+          <p class="header-top___quote_font">Darwan Singh Tur</p>
+        </blockquote>
       </div>
     </section>
-  </section>
-  <section class="block-success">
-    <div class="block-success__part">
-      <h3 class="success__title">Несколько причин, почему клиенты выбирают нас</h3>
-    </div>
-    <div class="block-success__part">
-      <section class="block-success__item ">
-        <span class="block-success__icon cash"></span>
-        <h3 class="block-success__title">Доступные цены</h3>
-        <p class="block-success__content">Постоянный мониторинг конкурентов и отбор поставщиков позволяют нам оказывать
-          услуги
-          высокого качества по доступной цене</p>
-      </section>
-      <section class="block-success__item">
-        <span class="block-success__icon person"></span>
-        <h3 class="block-success__title">Опытный персонал</h3>
-        <p class="block-success__content">Все сотрудники AutoPoint имеют большой опыт работы и профильное
-          образование</p>
-      </section>
-      <section class="block-success__item">
-        <span class="block-success__icon equipment"></span>
-        <h3 class="block-success__title">Современное оборудование</h3>
-        <p class="block-success__content">Профессиональное оборудование позволяет нам выполнять работы любого уровня
-          сложности</p>
-      </section>
-      <section class="block-success__item">
-        <span class="block-success__icon quality"></span>
-        <h3 class="block-success__title">Высокое качество</h3>
-        <p class="block-success__content">Профессионализм сотрудников и наличие высокоточного оборудования позволяет нам
-          гарантировать высокое качество</p>
-      </section>
-      <section class="block-success__item">
-        <span class="block-success__icon timing"></span>
-        <h3 class="block-success__title">Точные сроки</h3>
-        <p class="block-success__content">Мы строго соблюдаем оговоренные сроки и стараемся экономить время
-          заказчика</p>
-      </section>
-      <section class="block-success__item">
-        <span class="block-success__icon guarantee"></span>
-        <h3 class="block-success__title">Гарантия качества</h3>
-        <p class="block-success__content">Гарантия на работы и материалы согласно законодательства РБ (СТБ 1175)</p>
-      </section>
-    </div>
-  </section>
-</main>
-<footer class="landing-footer">
-  <section class="landing-footer__top">
-    <section class="footer-block">
-      <aside class="footer-top__part">
-        <section class="footer-side">
-          <img class="logo-img" src="../image/header-footer_image/logo-vkladka.png" alt="AutoPoint">
-        </section>
-      </aside>
-      <aside class="footer-top__part">
-        <section class="footer-side">
-          <h5 class="footer-side__title">Услуги</h5>
-          <a class="footer-side__item" href="./service.html#tire_service" title="Шиномонтаж">Шиномонтаж</a>
-          <a class="footer-side__item" href="./service.html#tire_repair" title="Ремонт шин">Ремонт шин</a>
-          <a class="footer-side__item" href="./service.html#change_oil" title="Замена масла">Замена масла</a>
-          <a class="footer-side__item" href="./service.html#service_bracket" title="Ремонт подвески">Ремонт
-            подвески</a>
-          <a class="footer-side__item" href="./service.html#razval" title="Развал/схождене">Развал/схождене</a>
-          <a class="footer-side__item" href="./service.html#argon" title="Аргонная сварка">Аргонная
-            сварка</a>
-        </section>
-      </aside>
-      <aside class="footer-top__part">
-        <section class="footer-side">
-          <h5 class="footer-side__title">Контакты</h5>
-          <a class="footer-side__item footer-side__item_place" href="./contacts.html#map_contact"
-             title="Адрес">Воложин ул.Чапаева, 13<br>
-            GPS: 54.086759, 26.538493</a>
-          <a class="footer-side__item footer-side__item_phone" href="tel:+375291234567">+375 (29) 123-45-67</a>
-          <a class="footer-side__item footer-side__item_mail" href="mailto:info@autopoint.org">info@autopoint.org</a>
-        </section>
-      </aside>
-      <aside class="footer-top__part">
-        <section class="footer-side">
-          <h5 class="footer-side__title">O нас</h5>
-          <p>Мы всегда готовы помочь Вам решить любую проблему с Вашим автомобилем.</p>
-        </section>
-      </aside>
+    <nav class="topnav" id="myTopnav">
+      <a href="../../index.html" class="pull" title="AutoPoint">
+        <img class="logo_media" src="../image/header-footer_image/logo-name.png" alt="AutoPoint"></a>
+      <ul class="header-bottom navbar">
+        <li class="navbar__item">
+          <a class="navbar__link" href="./../../index.html" title="Главная">Главная</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./service.html" title="Услуги">Услуги</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./price.html" title="Цены">Цены</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./about_us.html" title="О нас">О нас</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./contacts.html" title="Контакты">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="header-image">
+      <div class="header-image__content">
+        <h1 class="header-image__title">O нас</h1>
+      </div>
     </section>
-  </section>
-  <section class="landing-footer__bottom">
-    <section class="footer-block">
-      <section class="paycards">
-        <img class="paycards__type_visa-master" src="../image/header-footer_image/visa-mastercard-монохром.png"
-             alt="visa-master">
-        <img class="paycards__type_belkard" src="../image/header-footer_image/belkart-i-монохром.png" alt="belcard">
+  </header>
+  <main class="about-us">
+    <section class="block-about">
+      <section class="block-about__content">
+        <h2 class="block-about__title">Добро пожаловать в Autopoint</h2>
+        <p class="block-about__content_text">AutoPoint много лет избавляет автомобили от различных повреждений и
+          неисправностей. Более подробно о том, чем
+          занимаются наши специалисты, вы узнаете в разделе «Услуги». Сотрудники своим обязанностям они относятся с
+          большой
+          ответственностью, поэтому каждый клиент смело доверяет нам свой автомобиль.
+        </p>
       </section>
-      <section class="footer-info">
-        <p class="copyright"><span>&#169;</span> 2019 AutoPoint</p>
+      <section class="block-about__galary">
+          <ul class="bxslider">
+            <li><img src="../image/about_us_gallery/img_5.jpg" alt="gallery_1" /></li>
+            <li><img src="../image/about_us_gallery/img_3.jpg" alt="gallery_1" /></li>
+            <li><img src="../image/about_us_gallery/img_2.jpg" alt="gallery_2" /></li>
+            <li><img src="../image/about_us_gallery/img_4.jpg" alt="gallery_4" /></li>
+            <li><img src="../image/about_us_gallery/img_1.jpg" alt="gallery_5" /></li>
+            <li><img src="../image/about_us_gallery/img_6.jpg" alt="gallery_5" /></li>
+          </ul>
       </section>
     </section>
-  </section>
-</footer>
-<script src="../js/header.js"></script></body>
+    <section class="block-success">
+      <div class="block-success__part">
+        <h3 class="success__title">Несколько причин, почему клиенты выбирают нас</h3>
+      </div>
+      <div class="block-success__part">
+        <section class="block-success__item ">
+          <span class="block-success__icon cash"></span>
+          <h3 class="block-success__title">Доступные цены</h3>
+          <p class="block-success__content">Постоянный мониторинг конкурентов и отбор поставщиков позволяют нам оказывать
+            услуги
+            высокого качества по доступной цене</p>
+        </section>
+        <section class="block-success__item">
+          <span class="block-success__icon person"></span>
+          <h3 class="block-success__title">Опытный персонал</h3>
+          <p class="block-success__content">Все сотрудники AutoPoint имеют большой опыт работы и профильное
+            образование</p>
+        </section>
+        <section class="block-success__item">
+          <span class="block-success__icon equipment"></span>
+          <h3 class="block-success__title">Современное оборудование</h3>
+          <p class="block-success__content">Профессиональное оборудование позволяет нам выполнять работы любого уровня
+            сложности</p>
+        </section>
+        <section class="block-success__item">
+          <span class="block-success__icon quality"></span>
+          <h3 class="block-success__title">Высокое качество</h3>
+          <p class="block-success__content">Профессионализм сотрудников и наличие высокоточного оборудования позволяет нам
+            гарантировать высокое качество</p>
+        </section>
+        <section class="block-success__item">
+          <span class="block-success__icon timing"></span>
+          <h3 class="block-success__title">Точные сроки</h3>
+          <p class="block-success__content">Мы строго соблюдаем оговоренные сроки и стараемся экономить время
+            заказчика</p>
+        </section>
+        <section class="block-success__item">
+          <span class="block-success__icon guarantee"></span>
+          <h3 class="block-success__title">Гарантия качества</h3>
+          <p class="block-success__content">Гарантия на работы и материалы согласно законодательства РБ (СТБ 1175)</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="landing-footer">
+    <section class="landing-footer__top">
+      <section class="footer-block">
+        <aside class="footer-top__part">
+          <section class="footer-side">
+            <img class="logo-img" src="../image/header-footer_image/logo-vkladka.png" alt="AutoPoint">
+          </section>
+        </aside>
+        <aside class="footer-top__part">
+          <section class="footer-side">
+            <h5 class="footer-side__title">Услуги</h5>
+            <a class="footer-side__item" href="./service.html#tire_service" title="Шиномонтаж">Шиномонтаж</a>
+            <a class="footer-side__item" href="./service.html#tire_repair" title="Ремонт шин">Ремонт шин</a>
+            <a class="footer-side__item" href="./service.html#change_oil" title="Замена масла">Замена масла</a>
+            <a class="footer-side__item" href="./service.html#service_bracket" title="Ремонт подвески">Ремонт
+              подвески</a>
+            <a class="footer-side__item" href="./service.html#razval" title="Развал/схождене">Развал/схождене</a>
+            <a class="footer-side__item" href="./service.html#argon" title="Аргонная сварка">Аргонная
+              сварка</a>
+          </section>
+        </aside>
+        <aside class="footer-top__part">
+          <section class="footer-side">
+            <h5 class="footer-side__title">Контакты</h5>
+            <a class="footer-side__item footer-side__item_place" href="./contacts.html#map_contact"
+               title="Адрес">Воложин ул.Чапаева, 13<br>
+              GPS: 54.086759, 26.538493</a>
+            <a class="footer-side__item footer-side__item_phone" href="tel:+375291234567">+375 (29) 123-45-67</a>
+            <a class="footer-side__item footer-side__item_mail" href="mailto:info@autopoint.org">info@autopoint.org</a>
+          </section>
+        </aside>
+        <aside class="footer-top__part">
+          <section class="footer-side">
+            <h5 class="footer-side__title">O нас</h5>
+            <p>Мы всегда готовы помочь Вам решить любую проблему с Вашим автомобилем.</p>
+          </section>
+        </aside>
+      </section>
+    </section>
+    <section class="landing-footer__bottom">
+      <section class="footer-block">
+        <section class="paycards">
+          <img class="paycards__type_visa-master" src="../image/header-footer_image/visa-mastercard-монохром.png"
+               alt="visa-master">
+          <img class="paycards__type_belkard" src="../image/header-footer_image/belkart-i-монохром.png" alt="belcard">
+        </section>
+        <section class="footer-info">
+          <p class="copyright"><span>&#169;</span> 2019 AutoPoint</p>
+        </section>
+      </section>
+    </section>
+  </footer>
+
+  <script src="../js/header.js"></script>
+</body>
 </html>

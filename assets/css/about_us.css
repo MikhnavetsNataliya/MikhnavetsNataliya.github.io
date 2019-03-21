@@ -4,13 +4,14 @@
 
 /*-----header-----*/
 .header-image {
-    background: url("../image/page_image/index-parallax.jpg") top left no-repeat;
+    background: url("../image/page_image/index-backdrop.jpg") top left no-repeat;
     background-size: cover;
 }
 
 /*-----about-us__main part-----*/
 .about-us {
     display: block;
+    padding: 0 0.5em;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -22,9 +23,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 0;
-    margin: 0 auto;
+    margin: 3em auto 1em;
     width: 100%;
     max-width: 73.125em;
 }
@@ -32,8 +33,7 @@
 .block-about__content {
     display: flex;
     flex-direction: column;
-    width: 22em;
-    margin-right: 1.5em;
+    width: 25em;
 }
 
 .block-about__title {
@@ -47,22 +47,10 @@
     text-align: justify;
 }
 
-
-
-
-
-.slides img {
-
-}
-
 .block-about__galary {
     display: flex;
     width: 45em;
-
 }
-
-
-
 
 .block-success {
     display: flex;
@@ -114,18 +102,7 @@
     margin: 0.8em;
     width: 22em;
     text-align: center;
-    /*visibility: visible;
-    animation: growElement 4s linear;*/
 }
-
-/*@keyframes growElement {
-    0% {
-        transform: scale(0.5);
-    }
-    100% {
-        transform: none;
-    }
-}*/
 
 .block-success__title {
     font-size: 1.125rem;
@@ -145,6 +122,7 @@
     width: 6em;
     height: 6em;
 }
+
 .cash::before {
     background-image: url("../image/about_us_icon/icon_cash.png");
 }
@@ -170,9 +148,15 @@
 }
 
 @media (max-width: 1150px) {
-    .about-us{
+    .block-about {
+        justify-content: center;
         width: 100%;
     }
+
+    .about-us {
+        width: 100%;
+    }
+
     .block-success__part {
         justify-content: center;
     }

@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-function openPage(pageName, elmnt, color) {
+function openPage(pageName) {
     // Скрыть все элементы С class= "tabcontent" по умолчанию */
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -16,10 +16,8 @@ function openPage(pageName, elmnt, color) {
 
     // Показать содержимое конкретной вкладки
     document.getElementById(pageName).style.display = "block";
-
-    // Добавьте определенный цвет к кнопке, используемой для открытия содержимого вкладки
-    elmnt.style.backgroundColor = color;
 }
+
 
 // Получить элемент с id="defaultOpen" и нажать на него
 document.getElementById("defaultOpen").click();

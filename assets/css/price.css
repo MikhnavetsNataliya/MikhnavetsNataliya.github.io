@@ -15,10 +15,17 @@
     padding: 0 .5em;
     font-size: 1rem;
 }
+
 @keyframes promo {
-    0% { color: rgba(232, 34, 19, 1); }
-    50% { color: rgb(249, 250, 249); }
-    100% { color: rgba(232, 34, 19, 1); }
+    0% {
+        color: rgba(232, 34, 19, 1);
+    }
+    50% {
+        color: rgb(249, 250, 249);
+    }
+    100% {
+        color: rgba(232, 34, 19, 1);
+    }
 }
 
 .price__promo {
@@ -55,6 +62,7 @@
     max-width: 1170px;
     font-size: 1em;
 }
+
 /*-----Вкладки-----*/
 .price-button {
     display: flex;
@@ -113,7 +121,7 @@
     text-transform: uppercase;
 }
 
-.table-price th{
+.table-price th {
     background: var(--price-table-bg-th-color);
     color: var(--price-table-text-th-color);
     font-weight: 400;

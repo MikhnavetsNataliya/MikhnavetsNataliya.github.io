@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Type of service</title>
+
   <link rel="stylesheet" href="../css/service.css">
   <link rel="apple-touch-icon" sizes="180x180" href="./../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./../favicon/favicon-32x32.png">
@@ -14,6 +15,7 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-config" content="./../favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+
   <meta property="og:locale" content="ru_RU"/>
   <meta property="og:title" content="AutoPoint. Автосервис и шиномонтаж"/>
   <meta property="og:type" content="website"/>
@@ -24,16 +26,14 @@
   <meta property="og:url" content="http://localhost:63342/mikhnavets.natali/MikhnavetsNataliya.github.io/"/>
   <meta property="og:image"
         content="http://localhost:63342/mikhnavets.natali/MikhnavetsNataliya.github.io/assets/image/header-footer_image/logo-name.png"/>
+
 </head>
 <body>
   <header class="landing-header">
     <section class="header-top">
       <div class="logo-block">
         <a href="./../../index.html" title="AutoPoint">
-          <picture>
-            <source class="logo-img__header" type="image/webp" srcset="./../image/webp_image/logo-name.webp">
-            <img class="logo-img__header" src="./../image/header-footer_image/logo-name.png" alt="autopoint">
-          </picture>
+          <img class="logo-img__header" src="./../image/header-footer_image/logo-name.png" alt="autopoint">
         </a>
       </div>
       <div class="quot-block">
@@ -48,7 +48,7 @@
     </section>
     <nav class="topnav" id="myTopnav">
       <a href="../../index.html" class="pull" title="AutoPoint">
-        <img src="./../image/webp_image/logo-name.webp" alt="AutoPoint"></a>
+        <img class="logo_media" src="../image/header-footer_image/logo-name.png" alt="AutoPoint"></a>
       <ul class="header-bottom navbar">
         <li class="navbar__item">
           <a class="navbar__link" href="./../../index.html" title="Главная">Главная</a>
@@ -90,13 +90,9 @@
         <img src="../image/service/tire_service.jpg" alt="tire_service">
       </picture>
     </article>
-    <article class="service__item">
-      <picture class="service__img">
-        <source srcset="../image/webp_image/remont_shin-gellary.webp">
-        <img src="../image/service/remont-shin.jpg" alt="remont-shin">
-      </picture>
+    <article class="service__item" id="tire_repair">
       <section class="service__content">
-        <h3 class="service__item_marker" id="tire_repair">Ремонт шин</h3>
+        <h3 class="service__item_marker">Ремонт шин</h3>
         <p class="service__contents">Колесо - одна из важных частей автомобиля, которая обеспечивает, прежде всего,
           безопасность движения всех участников. Нашими сотрудникам по плечу такие работы как ремонт шин в связи с
           проколами, порезами,
@@ -104,6 +100,10 @@
           самого
           процесса проведения работ по шиномонтажу с недорогой ценой.</p>
       </section>
+      <picture class="service__img">
+        <source srcset="../image/webp_image/remont_shin-gellary.webp">
+        <img src="../image/service/remont-shin.jpg" alt="remont-shin">
+      </picture>
     </article>
     <article class="service__item" id="change_oil">
       <section class="service__content">
@@ -126,10 +126,6 @@
       </picture>
     </article>
     <article class="service__item" id="service_bracket">
-      <picture class="service__img">
-        <source srcset="./../image/webp_image/remont_podveski.webp">
-        <img src="../image/service/remont_podveski.jpg" alt="remont_podveski">
-      </picture>
       <section class="service__content">
         <h3 class="service__item_marker">Ремонт подвески</h3>
         <p class="service__contents">Для того, чтобы увеличить надежность работы, срок службы, а также для обеспечения
@@ -140,6 +136,10 @@
           динамики управляемости и движения. Если появились такие симптомы, то необходимо провести диагностику подвески
           (задней и передней). Наши специалисты скрупулёзно проверят каждый узел ходовой части Вашего автомобиля.</p>
       </section>
+      <picture class="service__img">
+        <source srcset="./../image/webp_image/remont_podveski.webp">
+        <img src="../image/service/remont_podveski.jpg" alt="remont_podveski">
+      </picture>
     </article>
     <article class="service__item" id="razval">
       <section class="service__content">
@@ -154,10 +154,6 @@
       </picture>
     </article>
     <article class="service__item" id="argon">
-      <picture class="service__img">
-        <source srcset="./../image/webp_image/argonnaya_svarka.webp">
-        <img src="../image/service/argonnaya_svarka.jpg" alt="argonnaya_svarka">
-      </picture>
       <section class="service__content">
         <h3 class="service__item_marker">Аргонная сварка</h3>
         <p class="service__contents">Аргоновая сварка – это сварочный процесс, для которого применяется инертный газ
@@ -168,6 +164,10 @@
           наш автосервис "AutoPoint", если вам нужны услуги аргонной сварки. У нас есть профессиональное
           оборудование, а наши специалисты имеют большой опыт работы. </p>
       </section>
+      <picture class="service__img">
+        <source srcset="./../image/webp_image/argonnaya_svarka.webp">
+        <img src="../image/service/argonnaya_svarka.jpg" alt="argonnaya_svarka">
+      </picture>
     </article>
   </main>
   <footer class="landing-footer">
@@ -175,7 +175,9 @@
       <section class="footer-block">
         <aside class="footer-top__part">
           <section class="footer-side">
-            <img class="logo-img" src="../image/header-footer_image/logo-vkladka.png" alt="AutoPoint">
+            <a href="./../../index.html" title="AutoPoint">
+                <img class="logo-img" src="../image/header-footer_image/logo-vkladka.png" alt="AutoPoint">
+            </a>
           </section>
         </aside>
         <aside class="footer-top__part">
@@ -222,6 +224,7 @@
       </section>
     </section>
   </footer>
+
   <script src="../js/header.js"></script>
 </body>
 </html>
