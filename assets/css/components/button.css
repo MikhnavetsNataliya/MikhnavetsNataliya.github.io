@@ -4,6 +4,7 @@ input[type=submit] {
     display: block;
     overflow: hidden;
     outline: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0.25em 1.125em;
     margin: 0;
@@ -16,37 +17,59 @@ input[type=submit] {
     font: 1rem Montserrat, sans-serif;
     font-weight: 600;
     text-align: center;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     line-height: 2.5em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
     white-space: nowrap;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
     will-change: transform;
+    -webkit-transition: -webkit-transform 0.2s .15s ease-in-out;
+    transition: -webkit-transform 0.2s .15s ease-in-out;
+    -o-transition: transform 0.2s .15s ease-in-out;
     transition: transform 0.2s .15s ease-in-out;
+    transition: transform 0.2s .15s ease-in-out, -webkit-transform 0.2s .15s ease-in-out;
     cursor: pointer;
     z-index: -5;
 }
 
 input[type=submit]:hover {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0.8;
+    -webkit-box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
     box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
+    -webkit-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
     transform: translateY(-0.25em);
 }
 
 input[type=submit]:active {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0.8;
+    -webkit-box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
     box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
 }
 
 input[type=submit]:focus {
     outline: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0.8;
+    -webkit-box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
     box-shadow: 0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25);
+    -webkit-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
     transform: translateY(-0.25em);
 }

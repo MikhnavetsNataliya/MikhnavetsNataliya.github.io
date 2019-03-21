@@ -29,16 +29,26 @@ body {
 }
 
 .main-services__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 2em 0 2em;
     width: 100%;
 }
 
 .main-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0.6em;
     padding: 0;
@@ -49,7 +59,12 @@ body {
 }
 
 .main-service__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-bottom: 1.875em;
     width: 100%;
@@ -58,9 +73,18 @@ body {
 
 .main-service_link {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     background-image: url('../image/page_image/index-backdrop.jpg');
     background-size: cover;
@@ -144,5 +168,4 @@ body {
         font-size: 1em;
         padding-top: 2em;
     }
-
 }

@@ -12,6 +12,7 @@
 /*-------main part-----------*/
 .service-main {
     display: block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Montserrat', Verdana, sans-serif;
@@ -45,9 +46,16 @@
 }
 
 .service__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 100%;
     max-width: 73.125em;
@@ -55,6 +63,7 @@
 }
 
 .service__content {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 40em;
     margin: 0;
