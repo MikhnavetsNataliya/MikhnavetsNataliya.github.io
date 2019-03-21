@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/MikhnavetsNataliya.github.io/assets/fonts/montserrat/Montserrat-Regular.otf"),
+    url("/MikhnavetsNataliya.github.io/assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Architects_Daughter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/MikhnavetsNataliya.github.io/assets/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Rubik_Mono_One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/MikhnavetsNataliya.github.io/assets/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf") format("truetype");
+}

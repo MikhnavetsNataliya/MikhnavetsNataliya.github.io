@@ -1,0 +1,89 @@
+@import "style.css";
+
+:root {
+    --honeydew: #f9faf9;
+    --gainsboro: #e1e1e1;
+    --medium-gray-red: #777777;
+    --raven: #6c757d;
+    --baltic-sea: #343a40;
+    --nero: #151515;
+    --cornflower-blue: #7897f1;
+    --royal-blue: #1e52e8;
+
+    /*-----Главная-----*/
+    --index-service-link-color: var(--honeydew);
+    --index-partners-title-color: var(--baltic-sea);
+    --index-partners-border-color: var(--royal-blue);
+
+    /*-----Услуги-----*/
+    --service-item-color: var(--nero);
+    --service-item-border-color: var(--gainsboro);
+    --service-contents-text-color: var(--medium-gray-red);
+
+    /*-----Цены-----*/
+    --table-price-notice-color: var(--medium-gray-red);
+    --price-table-border-bottom-color: var(--honeydew);
+    --price-table-bg-th-color: var(--medium-gray-red);
+    --price-table-text-th-color:var(--honeydew);
+    --price-table-text-td-color:  var(--medium-gray-red);
+    --table-price-bg-tr-color: var(--honeydew);
+    --tablink-bg-color: var(--royal-blue);
+    --tablink-hover-active-bg-color: var(--medium-gray-red);
+
+    /*-----О нас-----*/
+    --block-about-text-color: var(--raven);
+    --block-about-title-color: var(--nero);
+    --block-success-bg-color: var(--honeydew);
+    --success-title-color: var(--nero);
+    --success-title-border-color: var(--gainsboro);
+    --block-seccess-item-title-color: var(--nero);
+
+    /*-----Контакты-----*/
+    --form-message-color: var(--medium-gray-red);
+    --header-intro-title-color: var(--nero);
+    --header-intro-title-border-color: var(--gainsboro);
+    --contact-contacts-bg-color: var(--honeydew);
+    --contact-connection-title-color: var(--baltic-sea);
+    --contact-connection-text-color: var(--medium-gray-red);
+    --contact-item-link-text-color:var(--medium-gray-red);
+    --contact-item-link-hover-color:var(--royal-blue);
+    --contact-item-link-focus-color:var(--cornflower-blue);
+
+    /*-----Components: header-----*/
+    --header-top-quote-color: var(--royal-blue);
+    --header-top-quote-rus-color: var(--raven);
+    --header-bottom-bg-color: var(--baltic-sea);
+    --header-bottom-color: var(--honeydew);
+    --header-bottom-hover-bg-color: var(--royal-blue);
+    --header-bottom-active-focus-color: var(--royal-blue);
+    --header-bottom-active-focus-bg-color: var(--baltic-sea);
+    --header-image-bg-after-color: var(--medium-gray-red);
+    --header-image-title-color: var(--honeydew);
+    --header-image-bg-opacity-color: var(--raven);
+    --header-nav_med-bg-active-color:var(--gainsboro);
+    --header-nav_med-bg-hover-focus-color: var(--gainsboro);
+    --header-nav_med-hover-focus-color: var(--royal-blue);
+
+    /*-----Components: footer-----*/
+    --landing-footer-top-bg-color: var(--baltic-sea);
+    --footer-top-text-color: var(--raven);
+    --footer-top-tittle-color: var(--gainsboro);
+    --footer-item-text-color: var(--medium-gray-red);
+    --footer-item-hover-color: var(--royal-blue);
+    --footer-item-focus-color: var(--cornflower-blue);
+    --landing-footer-bottom-bg-color: var(--nero);
+    --footer-bottom-text-color: #bdbdbd;
+
+    /*-----Components: button-----*/
+    --button-border-color: var(--royal-blue);
+    --button-bg-color: var(--royal-blue);
+    --button-text-color: var(--honeydew);
+    --button-hover-bg-color: var(--cornflower-blue);
+    --button-focus-color: var(--cornflower-blue);
+
+    /*-----Components: form-message-----*/
+    --form-message-input-bg-color:var(--honeydew);
+    --form-message-border-input-color: var(--royal-blue);
+    --form-message-input-text-color: var(--royal-blue);
+    --form-message-input-bg-focus-color:var(--gainsboro);
+}
