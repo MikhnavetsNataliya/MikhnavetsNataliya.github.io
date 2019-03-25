@@ -44,23 +44,27 @@
       </div>
     </section>
     <nav class="topnav" id="myTopnav">
-      <a href="../../index.html" class="pull" title="AutoPoint">
-        <img class="logo_media" src="../image/header-footer_image/logo-name.png" alt="AutoPoint"></a>
-      <ul class="header-bottom navbar">
+      <span class="navbar__icon" id="js-navbar__icon">
+              <i class="icon"></i>
+      </span>
+      <a href="./../../index.html" class="topnav__logo" title="AutoPoint">
+        <img class="logo_media" src="./../image/webp_image/logo-name.webp"
+             alt="AutoPoint"></a>
+      <ul class="header-bottom navbar" id="js-navbar">
         <li class="navbar__item">
           <a class="navbar__link" href="./../../index.html" title="Главная">Главная</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="./service.html" title="Услуги">Услуги</a>
+          <a class="navbar__link" href="./../page/service.html" title="Услуги">Услуги</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="./price.html" title="Цены">Цены</a>
+          <a class="navbar__link" href="./../page/price.html" title="Цены">Цены</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="./about_us.html" title="О нас">О нас</a>
+          <a class="navbar__link" href="./../page/about_us.html" title="О нас">О нас</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="./contacts.html" title="Контакты">Контакты</a>
+          <a class="navbar__link" href="./../page/contacts.html" title="Контакты">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -78,12 +82,12 @@
         узлов/гаек/болтов/креплений.</p>
     </section>
     <div class="price-button">
-    <button class="tablink" onclick="openPage('Tire', this)" id="defaultOpen">Шиномонтаж</button>
-    <button class="tablink" onclick="openPage('Repair-tire', this)">Ремонт шин</button>
-    <button class="tablink" onclick="openPage('Oil', this)">Замена масел и технических жидкостей</button>
-    <button class="tablink" onclick="openPage('Repair-bracket', this)">Ремонт подвески</button>
-    <button class="tablink" onclick="openPage('Argon-welding', this)">Аргонная сварка</button>
-    <button class="tablink" onclick="openPage('Expend-mat', this)">Расходные материалы</button>
+      <button class="tablink" onclick="openPage('Tire', this)" id="defaultOpen">Шиномонтаж</button>
+      <button class="tablink" onclick="openPage('Repair-tire', this)">Ремонт шин</button>
+      <button class="tablink" onclick="openPage('Oil', this)">Замена масел и технических жидкостей</button>
+      <button class="tablink" onclick="openPage('Repair-bracket', this)">Ремонт подвески</button>
+      <button class="tablink" onclick="openPage('Argon-welding', this)">Аргонная сварка</button>
+      <button class="tablink" onclick="openPage('Expend-mat', this)">Расходные материалы</button>
     </div>
     <section id="Tire" class="block-price tabcontent">
       <h3 class="header-intro__title">Шиномонтаж</h3>
@@ -410,7 +414,7 @@
     </section>
   </footer>
 
-  <script src="../js/header.js"></script>
-  <script src="./../js/price.js"></script>
+<script src="../js/header.js"></script>
+<script src="./../js/price.js"></script>
 </body>
 </html>

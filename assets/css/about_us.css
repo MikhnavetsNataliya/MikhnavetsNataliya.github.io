@@ -175,7 +175,7 @@
     background-image: url("../image/about_us_icon/icon_ctb.png");
 }
 
-@media (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
     .block-about {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -191,5 +191,23 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .block-about__title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .block-about__content_text {
+        font-size: 0.9em;
+    }
+    .bxslider {
+        width: 200%;
+    }
+
+    .block-success__part {
+        font-size: 0.8em;
     }
 }

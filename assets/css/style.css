@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, Verdana, sans-serif;
     font-size: 1rem;
 }
 
@@ -55,7 +55,7 @@ body {
     width: 100%;
     max-width: 23em;
     height: 18em;
-    z-index: -3;
+    z-index: 0;
 }
 
 .main-service__item {
@@ -167,5 +167,23 @@ body {
     .header-image__title_media {
         font-size: 1em;
         padding-top: 2em;
+    }
+
+    .header-image__content_aligning {
+        font-size: 1em;
+        padding-top: 2.2em;
+    }
+
+    .main-title {
+        font-size: 1em;
+    }
+
+    .link-title {
+        font-size: 1em;
+    }
+
+    .main-pertners img {
+        margin: 0.5em;
+        height: 4em;
     }
 }

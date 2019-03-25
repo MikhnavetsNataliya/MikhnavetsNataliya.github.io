@@ -186,3 +186,26 @@
 .header-intro__title {
     display: none;
 }
+
+@media screen and (max-width: 420px) {
+    .price__promo {
+        font-size: 1.5em;
+    }
+
+    .price__discription {
+        font-size: 0.9em;
+    }
+
+    .tablink {
+        font-size: 0.9em;
+    }
+
+    .table-price th {
+        font-size: 0.6em;
+        letter-spacing: 0.07em;
+    }
+
+    .table-price td {
+        font-size: 0.5em;
+    }
+}

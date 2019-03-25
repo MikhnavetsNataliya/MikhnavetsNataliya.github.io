@@ -8,12 +8,6 @@ function openPage(pageName) {
         tabcontent[i].style.display = "none";
     }
 
-    // Удалить цвет фона всех ссылок / кнопок
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-
     // Показать содержимое конкретной вкладки
     document.getElementById(pageName).style.display = "block";
 }

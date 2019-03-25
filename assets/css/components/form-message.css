@@ -36,7 +36,7 @@
     margin: 0.9em 0;
 }
 
-.form-message__input{
+.form-message__input {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
@@ -56,7 +56,7 @@
     background: var(--form-message-input-bg-focus-color);
 }
 
-@media (max-width: 1170px) {
+@media screen and (max-width: 1170px) {
     .form-message {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -64,8 +64,14 @@
     }
 }
 
-@media (max-width: 730px) {
+@media screen and (max-width: 730px) {
     .form-message__input {
         width: 25em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form-message__input {
+        width: 20em;
     }
 }

@@ -155,3 +155,25 @@ input[type=submit] {
         font-size: 1.3em;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .header-intro__title {
+        font-size: 1.1em;
+    }
+
+    .intro-title__content {
+        font-size: 1em;
+    }
+
+    .header-intro__title {
+        font-size: 1em;
+    }
+
+    .contact-item__title {
+        font-size: 1em;
+    }
+
+    .contact-item__content {
+        font-size: 0.8em;
+    }
+}

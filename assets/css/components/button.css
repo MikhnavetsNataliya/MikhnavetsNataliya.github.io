@@ -8,7 +8,7 @@ input[type=submit] {
     box-sizing: border-box;
     padding: 0.25em 1.125em;
     margin: 0;
-    width: 20em ;
+    width: 20em;
     max-width: 100%;
     border: none;
     border-radius: 1.8em;
@@ -72,4 +72,10 @@ input[type=submit]:focus {
     -webkit-transform: translateY(-0.25em);
     -ms-transform: translateY(-0.25em);
     transform: translateY(-0.25em);
+}
+
+@media screen and (max-width: 420px) {
+    input[type=submit] {
+        width: 15em;
+    }
 }

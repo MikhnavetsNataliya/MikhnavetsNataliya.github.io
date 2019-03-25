@@ -11,11 +11,10 @@ function toScroll() {
     return window.pageYOffset >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
-function myNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += "responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+/!*------Navbar-----*!/
+var mainNavBar = document.getElementById("js-navbar");
+var navBarIcon = document.getElementById("js-navbar__icon");
+
+navBarIcon.onclick = function() {
+    mainNavBar.classList.toggle('open');
+};
